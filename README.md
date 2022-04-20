@@ -1,21 +1,21 @@
-This terraform projects creates
- RDS databse with mysql 5.7 
- ###EC2 instance with wordpress pre installed and configured 
- ----------------------------------------------------------------------
- AWS FREE TRIAL friendly
- ----------------------------------------------------------------------
- Change database entries ,regions and other variable in terraform.tfvars file
- And Database password in user.tfvars file
- -------------------------------------------------------------------------
-  This script is default for AWS LINUX 2 
-  If you want to configure wordpress in Ubuntu then change IsUbuntu value to true in terraform.tfvars
-
-  Make sure you have configured aws CLI in your local machine
-
-  user_data.tf is script for LINUX 2 and userdata_ubuntu.tpl is for Ubuntu
-  ----------------------------------------------------------------------------------------
-  ami-id will be imported using data.aws_ami 
-  --------------------------------------------------------------------------------
+<h1>Infra-as-code using Terraform </h1>
+ <h4> Provision aws ec2 instance and MySQL RDS database</h4>
+ 
+ 
+ <h3>AWS FREE TRIAL friendly</h3>
+ 
+ Pre-requisites : Configure Aws CLI in your local machine
+ 
+ ***
+A little intro about the parameters in the terraform files
+```
+$ terraform.tfvars file : Defined Change database entries ,regions and other variable 
+$ user.tfvars file : Database password in
+$ terraform.tfvars : AWS LINUX 2 is a default OS but you can use Ubuntu by changing IsUbuntu = true
+$ user_data.tf is script for LINUX 2 and userdata_ubuntu.tpl is for Ubuntu
+$ ami-id will be imported using data.aws_ami 
+```
+  
  <h3> Security: </h3>
 <p> EC2 will be launched in public subnet and RDS will be launched in private subnet </p>
 <p> Only EC2 with defined security group can access RDS and RDS wont have internet access </p>
