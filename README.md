@@ -1,6 +1,6 @@
 This terraform projects creates
  RDS databse with mysql 5.7 
- #EC2 instance with wordpress pre installed and configured 
+ ###EC2 instance with wordpress pre installed and configured 
  ----------------------------------------------------------------------
  AWS FREE TRIAL friendly
  ----------------------------------------------------------------------
@@ -32,7 +32,7 @@ This terraform projects creates
 
 <h2> STEPS: </h2>
 
- <p>Clone this repo using command <code>  git clone https://github.com/devbhusal/terraform-ec2-RDS-wordpress.git</code></p>
+ <p>Clone this repo using command <code>  git clone https://github.com/jemalmoh/aws-terraform-wordpress.git</code></p>
  <p> Go to project folder         <code>  cd terraform-ec2-RDS-wordpress </code></p>
  <p>Initialize terraform          <code>  terraform init</code></p>
  <p>Change database and aws setting in terraform.tfvars file </p>
